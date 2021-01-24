@@ -24,11 +24,12 @@ export default function Chart({ data, bar = { dataKey: "", name: "" } }) {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
+      <XAxis dataKey="name" stroke="white" />
+
+      <YAxis stroke="white" />
       <Tooltip />
       <Legend />
-      <Bar dataKey={bar.dataKey} fill="#8884d8" name={bar.name} />
+      <Bar dataKey={bar.dataKey} fill="#455566" name={bar.name} />
     </BarChart>
   );
 }
