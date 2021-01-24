@@ -98,6 +98,7 @@ export default class Map extends Component {
                   blurb: d.blurb,
                   source1: d.sources[0],
                   source2: d.sources[1],
+                  name: d.name,
                 },
               };
 

@@ -13,11 +13,14 @@ export default function DataCard({ data }) {
             return (
               <Col xs={4}>
                 <Fade bottom>
-                  <Card style={{ marginBottom: "20px" }}>
+                  <Card className="card">
                     <Card.Body>
                       <Card.Title>
-                        <center>{element.blurb}</center>
+                        <center>{element.name}</center>
                       </Card.Title>
+                      <Card.Text>
+                        <center>{element.blurb}</center>
+                      </Card.Text>
                       <Container>
                         <Row>
                           <Col>
@@ -25,6 +28,7 @@ export default function DataCard({ data }) {
                               <Button
                                 variant="primary"
                                 href={element.source1.url}
+                                className="button"
                               >
                                 Source 1
                               </Button>
@@ -37,6 +41,7 @@ export default function DataCard({ data }) {
                               <Button
                                 variant="primary"
                                 href={element.source1.url}
+                                className="button"
                               >
                                 Source 2
                               </Button>
