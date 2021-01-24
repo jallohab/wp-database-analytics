@@ -3,6 +3,7 @@ import * as d3 from "d3";
 import * as topojson from "topojson";
 import DataCard from "./Card";
 import LoadingOverlay from "react-loading-overlay";
+import Fade from "react-reveal/Fade";
 
 export default class Map extends Component {
   constructor(props) {
@@ -165,24 +166,26 @@ export default class Map extends Component {
         text="Loading Data..."
       >
         <div style={{ minHeight: "100vh" }}>
-          <div>
-            <svg
-              style={{
-                marginLeft: "auto",
-                marginRight: "auto",
-                display: "block",
-              }}
-              width={"50vw"}
-              height={"50vh"}
-              ref={this.svg}
-            ></svg>
+          <Fade clear>
+            <div>
+              <svg
+                style={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  display: "block",
+                }}
+                width={"50vw"}
+                height={"50vh"}
+                ref={this.svg}
+              ></svg>
 
-            <br></br>
-            <br></br>
-          </div>
-          <div>
-            <DataCard data={this.state.array} />
-          </div>
+              <br></br>
+              <br></br>
+            </div>
+            <div>
+              <DataCard data={this.state.array} />
+            </div>
+          </Fade>
         </div>
       </LoadingOverlay>
     );
