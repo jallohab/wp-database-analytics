@@ -6,7 +6,7 @@
 
 ---
 
-<p align="center"> This project will show the police brutality of African Americans using the US map.
+<p align="center"> This project is the data analytics of police brutality using the map in the United States.
     <br> 
 </p>
 
@@ -22,36 +22,29 @@
 - [Acknowledgments](#acknowledgments)
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
-In the United States Data show that police kill civilian more than  any other countries. The most affected by this are the
-African American community. By numbers white people are fatally shot by police more than any other race, however; if we look
-at it based on the demographic, then African Americans suffers almost 3 times more police shooting than the white.
+In the United States Data show that police kill civilians more than  any other country. 
+The most affected by this are the Native and African American communities. By numbers white people are fatally shot by police more than any other race, however; if we look based on the demographic, then African Americans suffer almost 3 times more police shootings than the white.
 
 
 ## 💡 Idea / Solution <a name = "idea"></a>
-For our website, you can track which states are the most affected by going zooming through the map.
-Moreover, you can get to visualize the rate of the police shooting through the different bar charts.
+For our website, you can track which states are the most affected through zooming the map or selecting a specific location of the map. Moreover, you can get to visualize the rate of the police shooting through the different bar charts.
 
 
 ## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
-Because of lack of federal database of police shooting to the public, we had to use the Washington Post database.
-Even though the Washington Post usually updated the information on the police shooting, but there were still some
-missing pieces such as people who died while in police custody police shooting by off duty officiers.
+Because of the lack of a federal database of police shootings to the public, we had to use the Washington Post database. Even though the Washington Post usually updated the information on the police shooting, there were still some missing pieces such as people who died while in police custody police shooting by off duty officers.
 
-We had to use technology that we know we will have eniough time to learn and be able to use during the 24 hour
-because mostly we were newby with this teachnology.
+We had to use technology that we know we will have enough time to learn and be able to use during the 24 hour window because we were newby with most of the technology that we used.
+
 
 ## 🚀 Future Scope <a name = "future_scope"></a>
-Even though our website anaylitics mostly focuses on police shooting, however; we can make our website use any routes
-such as which races are suffering the most in mental illness. In addition, we can even keep track of which states are
-affected through the most with COVID19. The way our website's design, we just need the right data to visualize any 
-differences bvetween states and races in the US.
+Even though our website analytics mostly focuses on police shootings, however; we can make our website use any routes such as which races are suffering the most in mental illness. In addition, we can even keep track of which states are affected through the most with COVID19. The way our website's design, we just need the right data to visualize any differences between states and races in the US. Furthermore, it is easy to switch the location(map) to the whole word instead of the US only.
 
 ## 🏁 Website <a name = "website"></a>
 Copy the link below if you want to visit our site, or just click [herte](#here)
 
 
 ```
-Link
+Site Link
 ```
 
 
