@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="../src/assets/CunyHack.png" alt="Project logo"></a>
+ <img src="/src/assets/CunyHack.png" alt="US map"></a>
 </p>
 <h3 align="center">Project Title</h3>
 
@@ -15,7 +15,6 @@
 - [Idea / Solution](#idea)
 - [Dependencies / Limitations](#limitations)
 - [Future Scope](#future_scope)
-- [Setting up a local environment](#getting_started)
 - [Usage](#usage)
 - [Technology Stack](#tech_stack)
 - [Contributing](../CONTRIBUTING.md)
@@ -72,6 +71,6 @@ Link
 The [Repsitory](https://github.com/jallohab/wp-database-analytics/) to see the project details through github.
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-- Hat tip to anyone whose code was used
 - Washinton Post
-- References
+- CUNY Hackathon
+- Google Cloud
