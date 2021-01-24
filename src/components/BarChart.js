@@ -10,8 +10,7 @@ import {
   Legend,
 } from "recharts";
 
-export default function Chart({ data }) {
-  console.log(data);
+export default function Chart({ data, bar = { dataKey: "", name: "" } }) {
   return (
     <BarChart
       width={500}
@@ -26,10 +25,10 @@ export default function Chart({ data }) {
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
-      <YAxis name="Per 1m People" />
+      <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="young_adult" fill="#8884d8" name="Young Adults" />
+      <Bar dataKey={bar.dataKey} fill="#8884d8" name={bar.name} />
     </BarChart>
   );
 }
