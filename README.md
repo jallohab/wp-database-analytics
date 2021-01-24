@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
- <img src="/src/assets/CunyHack.png" alt="US map"></a>
+ <img src="/src/assets/Screenshot.png" alt="US map"></a>
 </p>
 <h3 align="center">WantedToLive</h3>
 
