@@ -25,6 +25,7 @@ class NavigationBar extends Component {
             </ul>
           </Navbar.Collapse>
         </Navbar>
+        <br></br>
       </div>
     );
   }
