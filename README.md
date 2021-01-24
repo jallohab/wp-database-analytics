@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="https://imgur.com/a/WsB78bf" alt="Project logo"></a>
+</p>
+<h3 align="center">Project Title</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+  [![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://hackathon.url.com) 
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center"> This project will show the police brutality of African Americans using the US map.
+    <br> 
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📝 Table of Contents
+- [Problem Statement](#problem_statement)
+- [Idea / Solution](#idea)
+- [Dependencies / Limitations](#limitations)
+- [Future Scope](#future_scope)
+- [Setting up a local environment](#getting_started)
+- [Usage](#usage)
+- [Technology Stack](#tech_stack)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
 
-### `npm test`
+## 🧐 Problem Statement <a name = "problem_statement"></a>
+In the United States Data show that police kill civilian more than  any other countries. The most affected by this are the
+African American community. By numbers white people are fatally shot by police more than any other race, however; if we look
+at it based on the demographic, then African Americans suffers almost 3 times more police shooting than the white.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- IDEAL: This section is used to describe the desired or “to be” state of the process or product. At large, this section 
+should illustrate what the expected environment would look like once the solution is implemented.
+- REALITY: This section is used to describe the current or “as is” state of the process or product. 
+- CONSEQUENCES: This section is used to describe the impacts on the business if the problem is not fixed or improved upon.
+This includes costs associated with loss of money, time, productivity, competitive advantage, and so forth.
 
-### `npm run build`
+Following this format will result in a workable document that can be used to understand the problem and elicit
+requirements that will lead to a winning solution. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💡 Idea / Solution <a name = "idea"></a>
+For our website, you can track which states are the most affected by going zooming through the map.
+Moreover, you can get to visualize the rate of the police shooting through the different bar charts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once the ideal, reality, and consequences sections have been 
+completed, and understood, it becomes easier to provide a solution for solving the problem.
 
-### `npm run eject`
+## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
+Because of lack of federal database of police shooting to the public, we had to use the Washington Post database.
+Even though the Washington Post usually updated the information on the police shooting, but there were still some
+missing pieces such as people who died while in police custody police shooting by off duty officiers.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We had to use technology that we know we will have eniough time to learn and be able to use during the 24 hour
+because mostly we were newby with this teachnology.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Future Scope <a name = "future_scope"></a>
+Even though our website anaylitics mostly focuses on police shooting, however; we can make our website use any routes
+such as which races are suffering the most in mental illness. In addition, we can even keep track of which states are
+affected through the most with COVID19. The way our website's design, we just need the right data to visualize any 
+differences bvetween states and races in the US.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🏁 Getting Started <a name = "getting_started"></a>
+These instructions will get you a copy of the project up and running on your local machine for development 
+and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+What things you need to install the software and how to install them.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+Give examples
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installing
 
-### Code Splitting
+A step by step series of examples that tell you how to get a development env running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Say what the step will be
 
-### Analyzing the Bundle Size
+```
+Give the example
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+And repeat
 
-### Making a Progressive Web App
+```
+until finished
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🎈 Usage <a name="usage"></a>
+Add notes about how to use the system.
 
-### Advanced Configuration
+## ⛏️ Built With <a name = "tech_stack"></a>
+- [React](https://reactjs.org/) - Web Framework
+- [d3](https://d3js.org/) - Data Visualization
+- [Google Cloud](https://cloud.google.com/) - Cloud Hosting
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [HTML](https://devdocs.io/html/) - UI/UX
+- [CSS](https://devdocs.io/css/) - UI/UX
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✍️ Authors <a name = "authors"></a>
+- [@jallohab](https://github.com/jallohab)
+- [@devinramsammy](https://github.com/devinramsammy)
+- [@Jadoplus](https://github.com/Jadoplus)
 
-### Deployment
+The [Repsitory](https://github.com/jallohab/wp-database-analytics/) is here
+who participated in this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎉 Acknowledgments <a name = "acknowledgments"></a>
+- Hat tip to anyone whose code was used
+- Washinton Post
+- References
