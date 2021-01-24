@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
 import * as topojson from "topojson";
+import DataCard from "./Card";
 
 export default class Map extends Component {
   constructor(props) {
@@ -8,13 +9,16 @@ export default class Map extends Component {
     this.svg = React.createRef();
     this.state = {
       database: [],
+      dict: new Set(),
+      array: [],
     };
   }
   async componentDidMount() {
+    var self = this;
     d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(
       (us) => {
-        var width = 500;
-        var height = 500;
+        var width = 750;
+        var height = 750;
 
         let svg = d3
           .select(this.svg.current)
@@ -22,6 +26,7 @@ export default class Map extends Component {
           .on("click", reset);
         const projection = d3.geoAlbersUsa().translate([width / 2, height / 2]);
         const path = d3.geoPath().projection(projection);
+
         var g = svg.append("g");
         function reset() {
           states.transition().style("fill", null);
@@ -53,6 +58,21 @@ export default class Map extends Component {
           )
           .attr("id", "state-borders")
           .attr("d", path);
+        const handleMouseOver = (d, i) => {
+          if (this.state.dict.has(i.metadata) !== true) {
+            let temp = this.state.dict;
+            temp.add(i.metadata);
+            let arr = this.state.array;
+            if (this.state.array.length === 9) {
+              arr.shift();
+            }
+            this.setState({
+              dict: temp,
+              array: [...arr, i.metadata],
+            });
+          }
+        };
+
         var data = {
           type: "FeatureCollection",
           features: [],
@@ -68,7 +88,13 @@ export default class Map extends Component {
                   type: "Point",
                   coordinates: [d.lat, d.lon],
                 },
+                metadata: {
+                  blurb: d.blurb,
+                  source1: d.sources[0],
+                  source2: d.sources[1],
+                },
               };
+
               let temp = data.features;
               temp.push(feature);
               data.features = temp;
@@ -90,7 +116,8 @@ export default class Map extends Component {
               return projection([longitude, latitude])[1];
             })
             .style("fill", "black")
-            .attr("r", 0.5);
+            .attr("r", 0.5)
+            .on("mouseover", handleMouseOver);
         });
         var zoom = d3
           .zoom()
@@ -127,18 +154,25 @@ export default class Map extends Component {
   }
   render() {
     return (
-      <div>
-        <svg
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            display: "block",
-          }}
-          width={"40vw"}
-          height={"40vh"}
-          ref={this.svg}
-        ></svg>
-      </div>
+      <>
+        <div>
+          <svg
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              display: "block",
+            }}
+            width={"50vw"}
+            height={"50vh"}
+            ref={this.svg}
+          ></svg>
+          <br></br>
+          <br></br>
+        </div>
+        <div>
+          <DataCard data={this.state.array} />
+        </div>
+      </>
     );
   }
 }
