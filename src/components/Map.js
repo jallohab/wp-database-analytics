@@ -4,6 +4,7 @@ import * as topojson from "topojson";
 import DataCard from "./Card";
 import LoadingOverlay from "react-loading-overlay";
 import Fade from "react-reveal/Fade";
+import Chart from "./BarChart";
 
 export default class Map extends Component {
   constructor(props) {
@@ -85,6 +86,7 @@ export default class Map extends Component {
         ).then((database) => {
           this.setState({
             loading: false,
+            database: database,
           });
           for (const d of database) {
             if (d.lat !== null && d.lon !== null) {
@@ -159,6 +161,102 @@ export default class Map extends Component {
       }
     );
   }
+  cleanData = (database) => {
+    let white = database.filter((ele) => {
+      return ele.race === "W";
+    });
+    let black = database.filter((ele) => {
+      return ele.race === "B";
+    });
+    let asian = database.filter((ele) => {
+      return ele.race === "A";
+    });
+    let native_american = database.filter((ele) => {
+      return ele.race === "N";
+    });
+    let other = database.filter((ele) => {
+      return ele.race === "O";
+    });
+    let hispanic = database.filter((ele) => {
+      return ele.race === "H";
+    });
+
+    let results = [];
+    let young_adult = 0;
+
+    for (const ele of white) {
+      if (ele.age <= 25) {
+        young_adult++;
+      }
+    }
+
+    results.push({
+      name: "White",
+      young_adult: Math.round(young_adult / 197),
+    });
+    young_adult = 0;
+
+    for (const ele of black) {
+      if (ele.age <= 25) {
+        young_adult++;
+      }
+    }
+
+    results.push({
+      name: "Black",
+      young_adult: Math.round(young_adult / 42),
+    });
+    young_adult = 0;
+
+    for (const ele of asian) {
+      if (ele.age <= 25) {
+        young_adult++;
+      }
+    }
+
+    results.push({
+      name: "Asian",
+      young_adult: Math.round(young_adult / 17),
+    });
+    young_adult = 0;
+
+    for (const ele of other) {
+      if (ele.age <= 25) {
+        young_adult++;
+      }
+    }
+
+    results.push({
+      name: "Other",
+      young_adult: Math.round(young_adult / 49),
+    });
+    young_adult = 0;
+
+    for (const ele of native_american) {
+      if (ele.age <= 25) {
+        young_adult++;
+      }
+    }
+
+    results.push({
+      name: "Native American",
+      young_adult: Math.round(young_adult / 4.9),
+    });
+    young_adult = 0;
+
+    for (const ele of hispanic) {
+      if (ele.age <= 25) {
+        young_adult++;
+      }
+    }
+
+    results.push({
+      name: "Hispanic",
+      young_adult: Math.round(young_adult / 39),
+    });
+    young_adult = 0;
+    return results;
+  };
   render() {
     return (
       <LoadingOverlay
@@ -187,6 +285,9 @@ export default class Map extends Component {
               <DataCard data={this.state.array} />
             </div>
           </Fade>
+        </div>
+        <div>
+          <Chart data={this.cleanData(this.state.database)}></Chart>
         </div>
       </LoadingOverlay>
     );
