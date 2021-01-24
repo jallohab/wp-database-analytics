@@ -6,6 +6,9 @@ export default class Map extends Component {
   constructor(props) {
     super(props);
     this.svg = React.createRef();
+    this.state = {
+      database: [],
+    };
   }
   async componentDidMount() {
     d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(
@@ -50,10 +53,50 @@ export default class Map extends Component {
           )
           .attr("id", "state-borders")
           .attr("d", path);
+        var data = {
+          type: "FeatureCollection",
+          features: [],
+        };
+        d3.json(
+          "https://immense-oasis-19068.herokuapp.com/https://www.washingtonpost.com/graphics/investigations/police-shootings-database/data/policeshootings_all.json"
+        ).then((database) => {
+          for (const d of database) {
+            if (d.lat !== null && d.lon !== null) {
+              let feature = {
+                type: "feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [d.lat, d.lon],
+                },
+              };
+              let temp = data.features;
+              temp.push(feature);
+              data.features = temp;
+            }
+          }
+          svg
+            .selectAll("circle")
+            .data(data.features)
+            .enter()
+            .append("circle")
+            .attr("cx", function (d) {
+              var longitude = d.geometry.coordinates[1];
+              var latitude = d.geometry.coordinates[0];
+              return projection([longitude, latitude])[0];
+            })
+            .attr("cy", function (d) {
+              var longitude = d.geometry.coordinates[1];
+              var latitude = d.geometry.coordinates[0];
+              return projection([longitude, latitude])[1];
+            })
+            .style("fill", "black")
+            .attr("r", 0.25);
+        });
         var zoom = d3
           .zoom()
-          .scaleExtent([1, 10])
+          .scaleExtent([1, 50])
           .on("zoom", function (event) {
+            svg.selectAll("circle").attr("transform", event.transform);
             g.selectAll("path").attr("transform", event.transform);
           });
 
@@ -91,8 +134,8 @@ export default class Map extends Component {
             marginRight: "auto",
             display: "block",
           }}
-          width={"75vw"}
-          height={"75vh"}
+          width={"40vw"}
+          height={"40vh"}
           ref={this.svg}
         ></svg>
       </div>
