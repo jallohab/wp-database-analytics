@@ -487,9 +487,9 @@ export default class Map extends Component {
                       data={this.lineChart(this.state.database)}
                     ></SimpleLine>
                     <p className="secondary-caption">
-                      Per 1 Million People, Black minors are 3x more likely to
-                      be killed and Hispanic minors are 2x more likely to be
-                      killed than their White counterparts
+                      There hasn't been significant change to the amount of
+                      people killed by police per year eventhough many reforms
+                      have been made
                     </p>
                   </Fade>
                 </div>
