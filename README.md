@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="/src/assets/Screenshot.png" alt="US map"></a>
+</p>
+<h3 align="center">WantedToLive</h3>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<p align="center"> This project is a Data Analytics Dashboard of Fatal Encounters between the Police and Civilians from data sourced by the Washington Post.
+    <br> 
+</p>
 
-### `npm start`
+## 📝 Table of Contents
+- [Problem Statement](#problem_statement)
+- [Idea / Solution](#idea)
+- [Dependencies / Limitations](#limitations)
+- [Future Scope](#future_scope)
+- [Website](#website)
+- [Technology Stack](#tech_stack)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧐 Problem Statement <a name = "problem_statement"></a>
+In the United States, data has shown show that police kill civilians more than any other country. Minority populations have faced the greatest consequences for this. We look to analyze proportionally how different communities of color are affected.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 💡 Idea / Solution <a name = "idea"></a>
+We created a data analytics dashboard where individuals can view the data from the Washington Post database presented on a d3 map. In addition, we were able to come to multiple conclusions by looking at relationships between the data. The data is accessed through an API so it is updated as the WP database is updated. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
+Because of the lack of a federal database of police shootings to the public, we had to use the Washington Post award winning Fatal Encounters database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Future Scope <a name = "future_scope"></a>
+We plan to incorporate and overlay ecnonomic data to see if we can find more relationships between the data. In addition, we hope to see if we can add police reforms in the past to see how they have directly affected the amount of fatal encounters that have occurred.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🏁 Website <a name = "website"></a>
+[Our Project](#here)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⛏️ Built With <a name = "tech_stack"></a>
+- [React](https://reactjs.org/) - Web Framework
+- [d3](https://d3js.org/) - Data Visualization
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Bootstrap](https://getbootstrap.com/) - UI/UX
+- [CSS](https://devdocs.io/css/) - UI/UX
+- [github](https://github.com/) - Version Control
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ✍️ Authors <a name = "authors"></a>
+- [@jallohab](https://github.com/jallohab) - Abdulai Jalloh
+- [@devinramsammy](https://github.com/devinramsammy) - Devin Ramsammy
+- [@Jadoplus](https://github.com/Jadoplus) - Thierno Diallo
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎉 Acknowledgments <a name = "acknowledgments"></a>
+- Washinton Post
+- CUNY Hackathon

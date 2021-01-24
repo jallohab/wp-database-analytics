@@ -1,0 +1,13 @@
+.ticker {
+  background: #35393d;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tickertext {
+  font-size: 20pt;
+  font-family: BLM;
+  white-space: nowrap;
+  color: white;
+  display: inline;
+  padding-right: 2rem;
+}
