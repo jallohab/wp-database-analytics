@@ -19,7 +19,6 @@ export default class Map extends Component {
     };
   }
   async componentDidMount() {
-    var self = this;
     d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(
       (us) => {
         var width = 750;
@@ -269,6 +268,16 @@ export default class Map extends Component {
         <div style={{ minHeight: "100vh" }}>
           <Fade clear>
             <div>
+              <p className="map-caption">
+                Data points of Police Shootings across the U.S. sourced from{" "}
+                <a href="https://github.com/washingtonpost/data-police-shootings">
+                  The Washington Post
+                </a>
+              </p>
+              <p className="secondary-caption">
+                Click or scroll to zoom, and hover over data points to populate
+                the list to find out more.
+              </p>
               <svg
                 style={{
                   marginLeft: "auto",
