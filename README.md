@@ -53,8 +53,9 @@ Site Link
 - [d3](https://d3js.org/) - Data Visualization
 - [Google Cloud](https://cloud.google.com/) - Cloud Hosting
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [HTML](https://devdocs.io/html/) - UI/UX
+- [Bootstrap](https://getbootstrap.com/) - UI/UX
 - [CSS](https://devdocs.io/css/) - UI/UX
+- [github](https://github.com/) - Version Controls
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@jallohab](https://github.com/jallohab) - Abdulai Jalloh
