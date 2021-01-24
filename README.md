@@ -7,7 +7,7 @@
 
 ---
 
-<p align="center"> This project is the data analytics of police brutality using the map in the United States.
+<p align="center"> This project is a Data Analytics Dashboard of Fatal Encounters between the Police and Civilians from data sourced by the Washington Post.
     <br> 
 </p>
 
