@@ -90,7 +90,7 @@ export default class Map extends Component {
               return projection([longitude, latitude])[1];
             })
             .style("fill", "black")
-            .attr("r", 0.25);
+            .attr("r", 0.5);
         });
         var zoom = d3
           .zoom()
