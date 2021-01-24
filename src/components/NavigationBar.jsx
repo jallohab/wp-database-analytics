@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {Navbar,Nav} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
 class  NavigationBar extends Component {
-
     render() { 
         return (
           <Navbar class="navbar navbar-expand-lg navbar-dark bg-dark text-center" collapseOnSelect expand="lg" bg="dark" variant="dark">

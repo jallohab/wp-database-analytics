@@ -36,6 +36,7 @@ export default class Map extends Component {
       .attr("stroke", "white")
       .attr("stroke-linejoin", "round")
       .attr("d", path);
+      // eslint-disable-next-line
     const g = svg.append("g").attr("fill", "red").attr("stroke", "black");
   }
   render() {
