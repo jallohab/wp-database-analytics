@@ -1,7 +1,7 @@
 .caption {
     color:red;
     font-size:25px;
-    height: 795px;
+    height: 250px;
     margin: 10px;
     display: flex;
   }
@@ -22,8 +22,8 @@
     font-size:larger;
     font-weight:bold;
     line-height:1.3em;
-    color:#330099;
-    background-color:#66CC99;
+    color:white;
+    background-color:#343A40;
     animation: floatText infinite linear;
     width: 200%;
   

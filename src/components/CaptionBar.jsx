@@ -5,7 +5,7 @@ class CaptionBar extends Component {
     return (
         <div class="caption">
         <marquee class="GeneratedMarquee" direction="left" scrollamount="5" behavior="scroll">
-             Caption Bar
+             Abdulai Jalloh Devin Ramsammy Thierno Diallo
          </marquee>
      </div>
     );
