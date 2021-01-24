@@ -5,6 +5,7 @@ import DataCard from "./Card";
 import LoadingOverlay from "react-loading-overlay";
 import Fade from "react-reveal/Fade";
 import Chart from "./BarChart";
+import CaptionBar from "./CaptionBar";
 
 export default class Map extends Component {
   constructor(props) {
@@ -264,6 +265,7 @@ export default class Map extends Component {
         spinner
         text="Loading Data..."
       >
+        <CaptionBar data={this.state.database}></CaptionBar>
         <div style={{ minHeight: "100vh" }}>
           <Fade clear>
             <div>

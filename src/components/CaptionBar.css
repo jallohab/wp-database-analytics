@@ -1,30 +1,13 @@
-.caption {
-    color:red;
-    font-size:25px;
-    height: 250px;
-    margin: 10px;
-    display: flex;
-  }
-  
-  @keyframes floatText {
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .caption marquee {
-    align-self: flex-end;
-  }
-  
-  
-  .GeneratedMarquee {
-    font-family:'Comic Sans MS';
-    font-size:larger;
-    font-weight:bold;
-    line-height:1.3em;
-    color:white;
-    background-color:#343A40;
-    animation: floatText infinite linear;
-    width: 200%;
-  
-    }
+.ticker {
+  background: #35393d;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tickertext {
+  font-size: 20pt;
+  font-family: BLM;
+  white-space: nowrap;
+  color: white;
+  display: inline;
+  padding-right: 2rem;
+}

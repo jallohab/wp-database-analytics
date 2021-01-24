@@ -7,10 +7,9 @@ import NavigationBar from "./components/NavigationBar";
 
 export default function App() {
   return (
-    <React.StrictMode>
+    <>
       <NavigationBar />
       <Map />
-      <CaptionBar />
-    </React.StrictMode>
+    </>
   );
 }
