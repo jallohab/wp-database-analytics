@@ -66,7 +66,7 @@ Link
 ## ✍️ Authors <a name = "authors"></a>
 - [@jallohab](https://github.com/jallohab) - Abdulai Jalloh
 - [@devinramsammy](https://github.com/devinramsammy) - Devin Ramsammy
-- [@Jadoplus](https://github.com/Jadoplus) - Thierno Diallo
+- [@Jadoplus](https://github.com/Jadoplus) - Thierno 
 
 The [Repsitory](https://github.com/jallohab/wp-database-analytics/) to see the project details through github.
 
