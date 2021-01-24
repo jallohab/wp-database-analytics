@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import * as d3 from "d3";
 import * as topojson from "topojson";
 import DataCard from "./Card";
+import LoadingOverlay from "react-loading-overlay";
 
 export default class Map extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ export default class Map extends Component {
       database: [],
       dict: new Set(),
       array: [],
+      loading: true,
     };
   }
   async componentDidMount() {
@@ -80,6 +82,9 @@ export default class Map extends Component {
         d3.json(
           "https://immense-oasis-19068.herokuapp.com/https://www.washingtonpost.com/graphics/investigations/police-shootings-database/data/policeshootings_all.json"
         ).then((database) => {
+          this.setState({
+            loading: false,
+          });
           for (const d of database) {
             if (d.lat !== null && d.lon !== null) {
               let feature = {
@@ -154,25 +159,32 @@ export default class Map extends Component {
   }
   render() {
     return (
-      <>
-        <div>
-          <svg
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              display: "block",
-            }}
-            width={"50vw"}
-            height={"50vh"}
-            ref={this.svg}
-          ></svg>
-          <br></br>
-          <br></br>
+      <LoadingOverlay
+        active={this.state.loading}
+        spinner
+        text="Loading Data..."
+      >
+        <div style={{ minHeight: "100vh" }}>
+          <div>
+            <svg
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "block",
+              }}
+              width={"50vw"}
+              height={"50vh"}
+              ref={this.svg}
+            ></svg>
+
+            <br></br>
+            <br></br>
+          </div>
+          <div>
+            <DataCard data={this.state.array} />
+          </div>
         </div>
-        <div>
-          <DataCard data={this.state.array} />
-        </div>
-      </>
+      </LoadingOverlay>
     );
   }
 }
