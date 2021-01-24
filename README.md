@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="../assets/CunyHack.png" alt="Project logo"></a>
+ <img src="./CunyHack.png" alt="Project logo"></a>
 </p>
 <h3 align="center">Project Title</h3>
 
