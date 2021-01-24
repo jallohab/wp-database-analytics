@@ -2,7 +2,7 @@
   <a href="" rel="noopener">
  <img src="/src/assets/CunyHack.png" alt="US map"></a>
 </p>
-<h3 align="center">Project Title</h3>
+<h3 align="center">WantedToLive</h3>
 
 ---
 
