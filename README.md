@@ -55,5 +55,5 @@ We plan to incorporate and overlay ecnonomic data to see if we can find more rel
 - [@Jadoplus](https://github.com/Jadoplus) - Thierno Diallo
 
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-- Washinton Post
+- Washington Post
 - CUNY Hackathon
