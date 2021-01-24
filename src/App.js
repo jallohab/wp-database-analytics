@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./App.css";
 import NavigationBar from './components/NavigationBar'
 // eslint-disable-next-line
@@ -10,6 +11,15 @@ function App() {
   </React.StrictMode>
   );
 
-}
+=======
+import React from "react";
+import Map from "./components/Map";
 
-export default App;
+export default function App() {
+  return (
+    <div className="App">
+      <Map></Map>
+    </div>
+  );
+>>>>>>> 26d0950e5c44b6d0beb9beb6cba9f1aefd79f0ef
+}
